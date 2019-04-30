@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RebootApp2</string>
+    <string name="min1">3 Minutes</string>
+    <string name="min2">5 Minutes</string>
+    <string name="min3">10 Minutes</string>
+
+</resources>

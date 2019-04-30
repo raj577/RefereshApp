@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/buttonTint">
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="304dp"
+        android:layout_height="255dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/buttonTint"
+        android:orientation="vertical"
+        android:weightSum="1.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/min3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="#E44236"
+            android:onClick="runtimer"
+            android:text="@string/min1"
+            android:textAlignment="center"
+            android:textColor="@color/buttonText"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/min5"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button"
+            android:backgroundTint="#BB2CD9"
+            android:onClick="runtimer"
+            android:text="@string/min2"
+            android:textAlignment="center"
+            android:textColor="@color/buttonText"
+            android:textSize="20sp" />
+
+
+
+        <Button
+            android:id="@+id/min10"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/custom_button"
+            android:onClick="runtimer"
+            android:text="@string/min3"
+            android:textAlignment="center"
+            android:textColor="@color/buttonText"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="405dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/buttonTint"
+        android:orientation="vertical"
+        android:weightSum="3"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <!--<TextView-->
+        <!--android:id="@+id/messsage"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="14dp"-->
+        <!--android:text="Don’t do anything. Just sit back, relax & breathe."-->
+        <!--android:textAlignment="center"-->
+        <!--android:textSize="40dp" />-->
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="372dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+
+            android:text="0:00"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="88dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/messsage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+
+            android:text="Remember taking rest is important."
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp" />
+
+        <!--<Switch-->
+            <!--android:id="@+id/switch2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="15dp"-->
+
+            <!--android:text="Music on/off"-->
+            <!--android:textAlignment="center"-->
+            <!--android:textColor="#FFFFFF"-->
+            <!--android:textSize="28dp" />-->
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
